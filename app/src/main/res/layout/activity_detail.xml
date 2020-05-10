@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:id="@+id/titletext"
+            android:text="Title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_below="@id/titletext"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="8dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/sandwich_picture_content_description"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_also_known_as_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/detail_also_known_as_label"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/image_iv"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_also_known_as"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Other Names"
+            android:layout_toRightOf="@id/tv_also_known_as_label"
+            android:layout_below="@id/image_iv"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/detail_place_of_origin_label"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/tv_also_known_as"
+            android:layout_marginLeft="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_place_of_origin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_also_known_as"
+            android:layout_toRightOf="@id/textView3"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="8dp"
+            tools:text="Place" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_ingredients_label"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/tv_place_of_origin"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_ingredients"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Ing1 , Ing2"
+            android:textStyle="bold"
+            android:layout_below="@id/tv_place_of_origin"
+            android:layout_toRightOf="@id/textView4"
+            android:layout_toEndOf="@id/textView4"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/detail_description_label"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_below="@id/tv_ingredients"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView9"
+            tools:text="Description of the sandwich"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
